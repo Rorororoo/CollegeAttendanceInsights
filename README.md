@@ -1,52 +1,94 @@
 # CollegeAttendanceInsights
-College Attendance Insights Dashboard
+College Attendance Insights Dashboard (Power BI)
 
-A fully interactive Power BI dashboard analyzing student attendance across 12 subjects for 500+ students over one month.
-The project identifies at-risk students, subjects with low turnout, trends over time, and department-level patterns.
+Interactive Power BI dashboard analyzing attendance patterns for 500+ students across multiple subjects.
+The report identifies at-risk students, low-performing subjects, and attendance trends over time using a clean star-schema model and DAX-driven KPIs.
 
-Features
+# Features
 
-✔ Heatmap of attendance by student & subject
-✔ Average attendance % per subject
-✔ Attendance trendline across dates
-✔ At-risk student identification using DAX
-✔ Interactive slicers for Department, Year, Subject & Date
-✔ Clean data model with star schema
-✔ Fully dynamic visuals connected through relationships
+Attendance Heatmap: Student × Subject matrix with dynamic color-coding
 
-Tech Used
+Subject Performance View: Average attendance % per subject, sorted to highlight low turnout
+
+At-Risk Detection: Flags students with <75% attendance
+
+Trendline Analysis: Attendance movement across dates
+
+Interactive Filters: Slice data by Department, Year, Subject, and Date
+
+Clean Data Model: Fact table + two dimension tables for optimized querying
+
+# Tech Stack
 
 Power BI Desktop
 
-Excel (datasets)
+Excel (ETL + dataset preparation)
 
-DAX (calculated measures)
+DAX Measures for KPIs
 
- Data Model
+Star Schema Data Modeling
 
-attendance (fact table)
+# Project Highlights
+✔ Data Cleaning & Prep
 
-student list (dimension)
+Processed raw attendance logs (150,000+ rows), added AttendanceFlag, removed duplicates, and structured data into analytical tables.
 
-subject list (dimension)
+✔ Data Modeling
 
-Relationships:
+Fact table: attendance
+Dimensions: student list, subject list
+Relationships built on StudentID and SubjectCode to enable accurate filtering and drill-downs.
 
-StudentID (1 → *)
+✔ DAX Measures
 
-SubjectCode (1 → *)
+Total Classes
 
- Key Insights
+Present Count
 
-Avg attendance across subjects: ~78%
+Attendance %
 
-Subjects with lowest turnout are clearly highlighted
+At Risk classification
+
+These metrics power all visuals in the dashboard.
+
+✔ Insights
+
+Identified subjects with consistently low attendance
+
+Revealed attendance dips across specific dates
+
+Highlighted student cohorts with risk of falling below required attendance thresholds
+
+Enabled department-level and year-level analysis for targeted interventions
+
+# Dashboard Views
+
+Attendance Heatmap
+
+Subject Performance Bar Chart
+
+Attendance Trendline
+
+At-Risk Student Table
+
+Interactive department/subject/date filters
+
+# Purpose
+
+This dashboard simulates a real academic reporting system and demonstrates core data analyst skills:
+
+Data transformation
+
+Dimensional modeling
+
+DAX calculation logic
+
+Building actionable, business-relevant visuals
+
+Delivering insights through interactive BI reports
 
 
-Consistent trends detected across different dates
 
-At-risk students (attendance < 75%) automatically flagged
-
-Author
+*Author*
 ROMA DSOUZA
 Aspiring Data Analyst 
