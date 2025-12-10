@@ -46,3 +46,7 @@ Subjects with lowest turnout are clearly highlighted
 Consistent trends detected across different dates
 
 At-risk students (attendance < 75%) automatically flagged
+
+Author
+ROMA DSOUZA
+Aspiring Data Analyst 
